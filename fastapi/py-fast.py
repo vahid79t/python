@@ -19,7 +19,7 @@ async def root(request: Request):
 
 
 def webhookzoho(data):
-    url = 'https://cliq.zoho.com/company/767068114/api/v2/bots/pytest/incoming?zapikey=1001.3ecf34326aefb6470bbae64fba181855.bf22cfa98e3942baf376c0926e48b401'
+    url = 'https://cliq.zoho.com/<>'
     headers = {"Content-Type": "application/json"}
     payload = json.dumps(data,ensure_ascii=False)
     response = requests.post(url, data=payload.encode("utf-8"), headers=headers)
